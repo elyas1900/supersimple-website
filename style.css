@@ -34,7 +34,7 @@ width: 600px;
     margin: 0;
     padding: 0;
     overflow-y: auto;
-
+overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -74,9 +74,9 @@ position: relative;
     background-color: #121212; /* رنگ پس‌زمینه تیره */
 
 
-    width: 700px;
+    width: 1000px;
     height:9000px;
-   
+   overflow-x: hidden;
     
 }
 
