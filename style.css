@@ -1,6 +1,6 @@
 
 /* برای موبایل‌ها */
-@media (max-width: 1000px) {
+@media (max-width: 300px) {
     body {
       font-size: 14px;
     }
@@ -33,7 +33,7 @@ html body{
     margin: 0;
     padding: 0;
     overflow-y: auto;
-overflow-x: hidden;
+
 }
 * {
     margin: 0;
