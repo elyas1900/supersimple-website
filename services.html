@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ser.css">
+</head><style>
+:root {
+    --bg-color: #1a1a1a; /* پس‌زمینه هماهنگ */
+    --gradient-start: #00c6ff; /* رنگ آموا */
+    --gradient-end: #ff00ff; /* رنگ متضاد مدرن */
+    --highlight-color: rgba(0, 255, 255, 0.5); /* رنگ نورپردازی */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+h1 { 
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: transparent;
+    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+    animation: glow 3s ease-in-out infinite;
+    position: absolute;
+    top: 3%;
+    position: absolute;
+    top: 5%;
+}
+
+/* افکت نور متحرک */
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, var(--highlight-color), transparent);
+    opacity: 0.7;
+    transform: translateX(-100%);
+    animation: slide 2.5s infinite;
+    z-index: -1;
+}
+
+/* افکت سایه و نورپردازی */
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(15px);
+    background: inherit;
+    z-index: -2;
+}
+
+/* انیمیشن حرکت نور */
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* درخشش آرام */
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px var(--gradient-start), 0 0 20px var(--gradient-end);
+    }
+    50% {
+        text-shadow: 0 0 20px var(--gradient-start), 0 0 30px var(--gradient-end);
+    }
+}
+</style>
+<body>
+
+    <div class="menu-toggle" id="menu-btn">&#9776;</div>
+    <nav class="side-menu" id="side-menu">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul class="nav-list">
+            <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-concierge-bell"></i> services</a></li>
+            <li><a href="./contect.html"><i class="fas fa-phone-alt"></i> Contact us</a></li>
+            <li><a href="#"><i class="fas fa-about-alt"></i> About us</a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i> share website</a></li>
+        </ul>
+    </nav>
+    <script src="script1.js"></script>
+    <div class="div1"><ul><li>1. Custom Website Design & Development
+        We create visually appealing and user-friendly websites using HTML, CSS, and JavaScript. Whether you need a personal portfolio, a business websit
+    </li></ul><ul><li>2. WordPress Website Development
+        We specialize in building fully customized WordPress websites. From theme customization to plugin development, we can turn your ideas into a fully functional site. Whether you're starting a blog, e-commerce site, or a corporate website, we offer complete WordPress solutions</li></ul>
+    <ul><li>3. PHP Backend Development
+        We use PHP to build dynamic and interactive websites. From contact forms to complex content management systems, our PHP development ensures seamless integration with the front-end and back-end, enabling smooth functionality and performance.</li></ul>
+    <ul><li>4. Responsive Web Design
+        Your website will look great on any device! We create responsive web designs using HTML, CSS, and JavaScript, ensuring your site adapts to different screen sizes and devices, providing a seamless experience for users on mobile, tablet, and desktop.</li></ul>
+    <ul><li>5. Front-End Development with JavaScript
+        We enhance the interactivity of your website by adding dynamic elements using JavaScript. Whether it's form validation, custom animations, or real-time content updates, we ensure your website delivers a rich user experience with smooth interactions.
+        </li></ul>
+    <ul><li>6. WordPress Theme Customization
+        We offer expert WordPress theme customization, allowing you to tweak your website’s look and feel without needing to know how to code. From color schemes to layout changes, we ensure your website aligns perfectly with your brand identity.</li></ul>
+    <ul><li>
+        7. Website Maintenance & Updates
+        We offer ongoing maintenance services for your website. Whether it’s fixing bugs, updating content, or improving functionality, we ensure your site remains up-to-date, secure, and efficient, all using the latest web technologies.</li></ul>
+    <ul><li>
+        8. PHP Web Applications
+        Using PHP, we can develop custom web applications for your business. Whether it’s an online booking system, customer relationship management (CRM) software, or any other web-based application, we build robust solutions tailored to your needs.</li></ul>
+    <ul><li>
+        9. SEO Optimization for WordPress
+        We optimize your WordPress website for search engines using best practices in SEO. From optimizing page speed to ensuring proper structure and content for search engine visibility, we help improve your site’s ranking on Google and other search engines.</li></ul>
+    <ul><li>10. Web Performance Optimization
+        We focus on optimizing your website’s performance by reducing loading times and improving user experience. Using techniques such as image compression, code minification, and browser caching, we make sure your website loads fast and runs smoothly.</li></ul></div>
+ 
+</body>
+</html>

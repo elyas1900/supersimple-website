@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>simple</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="buttn.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<style>
+:root {
+        --bg-color: #1a1a1a; /* پس‌زمینه هماهنگ */
+        --gradient-start: #00c6ff; /* رنگ آموا */
+        --gradient-end: #ff00ff; /* رنگ متضاد مدرن */
+       --highlight-color: rgba(0, 255, 255, 0.5); /* رنگ نورپردازی */
+}
+body { 
+        margin: 0;
+        height: 100vh;
+        background: var(--bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+}
+
+    h1 { 
+        font-size: 4.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        color: transparent;
+        background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+        background-clip: text;
+        -webkit-background-clip: text;
+        display: inline-block;
+        animation: glow 3s ease-in-out infinite;
+        position: absolute;
+        top: 3%;
+    }
+
+    /* افکت نور متحرک */
+    h1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, var(--highlight-color), transparent);
+        opacity: 0.7;
+        transform: translateX(-100%);
+        animation: slide 2.5s infinite;
+        z-index: -1;
+    }
+
+    /* افکت سایه و نورپردازی */
+    h1::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(20px);
+        background: inherit;
+        z-index: -2;
+    }
+
+    /* انیمیشن حرکت نور */
+    @keyframes slide {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    /* درخشش آرام */
+    @keyframes glow {
+        0%, 100% {
+            text-shadow: 0 0 10px var(--gradient-start), 0 0 20px var(--gradient-end);
+        }
+        50% {
+            text-shadow: 0 0 20px var(--gradient-start), 0 0 30px var(--gradient-end);
+        }
+    }
+    </style>
+     <body >
+    <h1>abyss lord</h1>
+    <div class="menu-toggle" id="menu-btn">&#9776;</div>
+    <nav class="side-menu" id="side-menu">
+    <div class="close-btn" id="close-btn">&times;</div>
+    <ul class="nav-list">
+    <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="./services.html"><i class="fas fa-concierge-bell"></i> services</a></li>
+    <li><a href="./contect.html"><i class="fas fa-phone-alt"></i> Contact us</a></li>
+    <li><a href="#"><i class="fas fa-about-alt"></i> About us</a></li>
+    <li><a href="#"><i class="fas fa-share-alt"></i> share website</a></li>
+    </ul>
+    </nav>
+    <div class="card-container">
+    <div class="card">
+    <div class="card-front">
+    <img  src="img/WhatsApp Image 2025-01-09 at 00.50.15_4042ed46.jpg" alt="" class="card-img">
+    <h4> Name Emat taheri<br>&nbsp;&nbsp;&nbsp; From Iran,<br>Age 17 <br><br>  web developer  Html css javascript wordpress php web designer<br><br><br>telegram aura1900s<br>E-mail: Emat1900aura@gmail.com</h4>
+    </div>
+    <div class="card-back">
+    </div>
+    </div>
+    </div> 
+    <script src="script.js"></script>
+    
+    <div class="java"><br><br><br><br>mastering the foudation of web development. i ceaft elegnt and struceured HTML codes with  focus cleartiy accessibility, and effciency from seamlenss layouts to well-optimized elemnts.my approach ensures a refiend digital experience.</div>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon class="htmlicon"
+        src="https://cdn.lordicon.com/yvaxaowk.json"
+        trigger="loop"
+        delay="2000"
+        style="width:85px;height:85px">
+    </lord-icon>
+    <div class="css1"><br><br><br><br>Elegance in CSS
+
+        With a refined approach to CSS, I craft timeless and sophisticated designs, ensuring harmony between form and function. Precision, fluidity, and responsiveness define my work, creating seamless digital experiences that adapt effortlessly to any screen.</div>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon class="cssicon"
+        src="https://cdn.lordicon.com/eeolefdw.json"
+        trigger="loop"
+        delay="2000"
+        style="width:80px;height:80px">
+    </lord-icon>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon 
+    src="https://cdn.lordicon.com/blzfdhhj.json"
+    trigger="loop"
+    delay="2000"
+    style="width:100px;height:100px; position: absolute ;top: 50%; left: 65%;">
+    </lord-icon>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon
+    src="https://cdn.lordicon.com/tcfzgyak.json"
+    trigger="loop"
+    delay="2000"
+    style="width:100px;height:100px;position: absolute;left: 76%; top: 50%;">
+    </lord-icon>
+    <div class="jv"><br><br><br><br>JavaScript Essentials
+
+        Exploring the art of interactivity, refining logic, and enhancing user experience with precision.</div>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon
+    src="https://cdn.lordicon.com/wgmzmyvv.json"
+    trigger="loop"
+    delay="2000"
+    style="width:70px;height:70px;position: absolute;left: 83%;top: 47%;">    
+    </lord-icon>
+   <div class="bio-container">
+        <div class="bio-header">
+          <br><br>  <h1>Emat taheri</h1>
+            <p>Web Developer | JavaScript Enthusiast | Digital Creator</p>
+        </div>
+        <div class="bio-content">
+            <p>Driven by passion for coding and design, I'm constantly evolving, mastering HTML, CSS, and JavaScript to create seamless web experiences. With a goal of pushing the boundaries of interactivity, I’m always learning and experimenting with new ideas.</p>
+            <p>In my free time, I explore the world of tech, gadgets, and creative digital spaces. I believe that technology should not only be functional, but also beautiful.</p>
+        </div>
+        <div class="bio-footer">
+            <p>Let's connect and build something amazing!</p>
+        </div>
+    </div>
+  
+    <!-- فوتر -->
+    <footer class="modern-footer">
+        <p>&copy; 2025 Emat taheri. All rights reserved.</p>
+        <p>Contact: <a href="mailto:your-emataure1900@gmail.com">emataure1900@gmail.com</a></p>
+        
+        <!-- آیکون‌های اجتماعی -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://www.github.com" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <!-- لینک‌های پایین فوتر -->
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+    <button id="theme-toggle">
+        <span class="icon sun">☀</span>
+        <span class="icon moon">🌙</span>
+    </button>
+    <script src="button.js"></script>
+    <section class="other-skills">
+        <h2>Other Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fas fa-paint-brush"></i> <!-- آیکون طراحی -->
+                <span>Graphic Design</span>
+            </div>
+            <div class="skill">
+                <i class="fas fa-edit"></i> <!-- آیکون نوشتن -->
+                <span>Content Writing</span>
+            </div>
+            <div class="skill">
+                <i class="fas fa-camera"></i> <!-- آیکون عکاسی -->
+                <span>Photography</span>
+            </div>
+            <div class="skill">
+                <i class="fas fa-video"></i> <!-- آیکون ویرایش ویدیو -->
+                <span>Video Editing</span>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <div id="loader" style="width: 300px; height: 300px; margin: auto; position: absolute; left: 77%; top: 100%;"></div>
+
+
+
+    <script>
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('loader'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json' // مسیر فایل انیمیشن
+        });
+      </script>
+     
+
+
+
+     <div id="preloader">
+        <div id="lottie-loader"></div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+      <script>
+        var preloader = document.getElementById("preloader");
+        var loaderContainer = document.getElementById("lottie-loader");
+      
+        var animation = lottie.loadAnimation({
+          container: loaderContainer,
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'https://assets3.lottiefiles.com/packages/lf20_jcikwtux.json' // مسیر جدید تست‌شده
+        });
+        window.addEventListener("load", function () {
+          setTimeout(function () {
+            preloader.style.opacity = "0";
+            setTimeout(() => preloader.remove(), 500);
+          }, 2000);
+        });
+      </script>
+<div id="preloaderr">
+    <div class="loaderr">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script>
+    window.addEventListener("load", function () {
+      // انتخاب دقیق لودر اصلی با استفاده از آی‌دی
+      var preloaderr = document.getElementById("preloaderr");
+  
+      // بررسی اینکه آیا لودر موجود است
+      if (preloader) {
+        setTimeout(function () {
+          // اضافه کردن کلاس برای محو شدن لودر
+          preloaderr.classList.add("preloaderr-hide");
+  
+          // حذف کامل لودر بعد از محو شدن
+          setTimeout(() => preloaderr.remove(), 1000); 
+        }, 2000); // بعد از 2 ثانیه لودر محو می‌شود
+      }
+    });
+  </script>
+   </body>
+    </html>

@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #333); /* رنگ سیاه و خاکستری تیره */
+    overflow-x: hidden;
+}
+
+.menu-toggle {
+    font-size: 35px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1a1a1a, #2d2d2d); /* رنگ سیاه و خاکستری */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 1s ease-in-out;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, #333, #555); /* تغییر رنگ در هاور */
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100%;
+    background: linear-gradient(145deg, #333, #444); /* رنگ خاکستری تیره و آکوا تیره */
+    color: white;
+    padding-top: 60px;
+    transition: left 0.5s ease-in-out, background 3s ease-in-out;
+}
+
+.side-menu.active {
+    left: 0;
+    background: linear-gradient(145deg, #444, #555); /* تغییر رنگ به هنگام فعال شدن */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.close-btn:hover {
+    transform: rotate(90deg);
+    color: #00b3b3; /* تغییر رنگ دکمه بستن به آکوا تیره */
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 25px 0;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #444, #555); /* رنگ‌های خاکستری تیره */
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-list a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-45deg);
+    transition: left 0.5s ease;
+}
+
+.nav-list a:hover:before {
+    left: 100%;
+}
+
+.nav-list a:hover {
+    background: linear-gradient(90deg, #00b3b3, #006666); /* تغییر به رنگ آکوا در هاور */
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(0, 179, 179, 0.5);
+}
+
+.nav-list a i {
+    margin-right: 15px;
+    font-size: 26px;
+    transition: transform 0.5s ease;
+}
+
+.nav-list a:hover i {
+    transform: rotate(360deg); /* چرخش آیکون‌ها */
+}

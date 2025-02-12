@@ -1,0 +1,215 @@
+/* استایل کلی صفحه */
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #444;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(7, 176, 255, 0.9);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+#theme-toggle:hover {
+    background-color: #666;
+    transform: scale(1.1);
+}
+
+/* تنظیمات برای آیکون‌ها */
+.icon {
+    position: absolute;
+    font-size: 40px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* خورشید */
+.sun {
+    opacity: 1;
+    transform: scale(1);
+    color: aqua;
+    animation: rotate-sun 10s linear infinite;
+}
+
+.moon {
+    opacity: 0;
+    transform: scale(0.8);
+    color: #fff;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    animation: rotate-moon 10s linear infinite;
+}
+
+/* ایجاد انیمیشن چرخش برای خورشید */
+@keyframes rotate-sun {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ایجاد انیمیشن چرخش برای ماه */
+@keyframes rotate-moon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+/* سبک برای حالت لایت مود */
+body.light-mode {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+body.light-mode #theme-toggle {
+    background-color: #ddd;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .sun {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+body.light-mode .moon {
+    opacity: 1;
+    transform: scale(1);
+    animation: none;
+}
+
+
+
+
+
+.other-skills {
+    text-align: center;
+    padding: 50px 20px;
+    background: #121212;
+    color: #fff;
+    position: absolute;
+    top: 150%;
+}
+
+.other-skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+
+.skill i {
+    font-size: 1.5rem;
+    color: #00aaff;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+    background: #252525;
+}
+
+
+
+
+
+
+/* استایل کلی لودر */
+#preloaderr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* پس‌زمینه مشکی */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  }
+  
+  /* طراحی مدرن لودر */
+  .loaderr {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .loaderr div {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #00d4ff, #ff00ff); /* گرادینت جذاب */
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00d4ff, 0 0 30px #ff00ff, 0 0 50px #ff00ff; /* سایه نئونی */
+    animation: pulse 1.5s infinite ease-in-out, bounce 1s infinite alternate;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* حرکت هر دایره به طور جداگانه */
+  .loader div:nth-child(1) { animation-delay: 0s; }
+  .loader div:nth-child(2) { animation-delay: 1s; }
+  .loader div:nth-child(3) { animation-delay: 1s; }
+  .loader div:nth-child(4) { animation-delay: 1s; }
+  
+  /* انیمیشن ضربان و رقص */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.5); opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  /* حذف لودر بعد از لود کامل */
+  .preloaderr-hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  

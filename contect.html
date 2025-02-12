@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contect.css">
+    <style>
+ body {
+     font-family: 'Arial', sans-serif;
+    margin: 0;
+            padding: 0;
+            background: #1b1b1b;
+       display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .contact-container {
+            position: relative;
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 50px 30px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease;
+            z-index: 1;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+        }
+        .contact-container:hover {
+            transform: scale(1.05) rotateY(5deg);
+        }
+        .contact-container h2 {
+            color: #00d4d4;
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        }
+        .contact-container h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: #00d4d4;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0.5;
+        }
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .contact-buttons a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            padding: 18px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 40px;
+            background: linear-gradient(135deg, #00d4d4, #007a7a);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1;
+        }
+        .contact-buttons a::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            transition: top 0.5s ease, left 0.5s ease;
+            z-index: -1;
+        }
+        .contact-buttons a:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0, 255, 255, 0.5);
+        }
+        .contact-buttons a:hover::before {
+            top: 0;
+            left: 0;
+        }
+        .whatsapp {
+            background: linear-gradient(135deg, #25D369, #1da851);
+        }
+        .gmail {
+            background: linear-gradient(135deg, #DB4437, #c0392b);
+        }
+        .telegram {
+            background: linear-gradient(135deg, #0088cc, #007ab8);
+        }
+        .instagram {
+            background: linear-gradient(135deg, #E4405F, #d0314b);
+        }
+    </style><s></s>
+<body>
+    <div class="menu-toggle" id="menu-btn">&#9776;</div>
+    <nav class="side-menu" id="side-menu">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <ul class="nav-list">
+            <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="./services.html"><i class="fas fa-concierge-bell"></i> services</a></li>
+            <li><a href="./contect.html"><i class="fas fa-phone-alt"></i> Contact us</a></li>
+            <li><a href="#"><i class="fas fa-about-alt"></i> About us</a></li>
+            <li><a href="#"><i class="fas fa-share-alt"></i> share website</a></li>
+        </ul>
+    </nav>
+    <script src="script3.js"></script>
+    <div class="contact-container">
+        <h2>contact us</h2>
+        <div class="contact-buttons">
+            <!--WhatsApp-->
+            <a href="https://wa.me/93701387989" class="whatsapp" target="_blank">message on what'app</a>
+            <!--Gmail-->
+            <a href="mailto:emat1900aura@gmail.com" class="gmail" target="_blank">send E-mail to G-mail</a>
+            <!-- Telegram -->
+            <a href="https://t.me/nekochan91" class="telegram" target="_blank">Message on telegram</a>
+            <!-- Instagram -->
+            <a href="https://instagram.com/its_just_a_dream_1" class="instagram" target="_blank">see instagram profile</a>
+        </div>
+    </div>
+</body>
+</html>

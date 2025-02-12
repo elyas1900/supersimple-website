@@ -1,0 +1,564 @@
+
+/* برای موبایل‌ها */
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .menu {
+      display: block;
+      /* تنظیم منو برای موبایل */
+    }
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* برای تبلت‌ها */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      /* تنظیم منو برای تبلت */
+    }
+  }
+  
+
+html body{
+
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+    display: flex;
+    
+    align-items: center;
+    
+    margin: 0;
+position: relative;
+    overflow: hidden;
+    
+
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+   
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* ارتفاع حداقل صفحه برابر با ارتفاع کل صفحه */
+    display: flex;
+    flex-direction: column; /* مرتب‌سازی محتوا به‌صورت عمودی */
+    background-color: #121212; /* رنگ پس‌زمینه تیره */
+
+
+    
+   
+    
+}
+
+.card-container {
+    perspective: 1500px;
+    position: relative;
+    display: inline-block;
+}
+
+.card {
+    width: 800px;
+    height: 700px;
+    background: #2a2a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 30px rgba(0, 179, 179, 0.4);
+    position: absolute;
+    right: 50%;
+    top: 60%;
+}
+
+.card-front, .card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.card-back {
+    background: #333;
+    transform: rotateY(180deg);
+}
+
+.card-container:hover .card {
+    transform: scale(1.05);
+}
+
+.card-container:hover .card {
+    transform: scale(1.1);
+}
+
+.card-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* تغییرات رنگ به سمت موس */
+.card-container {
+    position: relative;
+    display: inline-block;
+}* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card-container {
+    perspective: 1500px;
+    position: relative;
+    display: inline-block;
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    background: #2a2a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 30px rgba(0, 179, 179, 0.4);
+    
+}
+
+.card-front, .card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.card-back {
+    background: #333;
+    transform: rotateY(180deg);
+}
+
+.card-container:hover .card {
+    transform: scale(1.05);
+}
+
+.card-container {
+    position: relative;
+    display: inline-block;
+}
+
+.card-container:hover .card {
+    transform: rotateY(20deg) rotateX(-10deg);
+}
+
+.card-container:hover .card {
+    transform: rotateY(20deg) rotateX(-10deg);
+}
+
+/* حالت کشیدگی به سمت موس */
+.card-container {
+    position: relative;
+    display: inline-block;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #333); /* رنگ سیاه و خاکستری تیره */
+    overflow-x: hidden;
+}
+
+.menu-toggle {
+    font-size: 35px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1a1a1a, #2d2d2d); /* رنگ سیاه و خاکستری */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 1s ease-in-out;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(145deg, #333, #555); /* تغییر رنگ در هاور */
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100%;
+    background: linear-gradient(145deg, #333, #444); /* رنگ خاکستری تیره و آکوا تیره */
+    color: white;
+    padding-top: 60px;
+    transition: left 0.5s ease-in-out, background 3s ease-in-out;
+}
+
+.side-menu.active {
+    left: 0;
+    background: linear-gradient(145deg, #444, #555); /* تغییر رنگ به هنگام فعال شدن */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+    color: #00b3b3; /* تغییر رنگ دکمه بستن به آکوا تیره */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin: 25px 0;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #444, #555); /* رنگ‌های خاکستری تیره */
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-list a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-45deg);
+    transition: left 0.5s ease;
+}
+
+.nav-list a:hover:before {
+    left: 100%;
+}
+
+.nav-list a:hover {
+    background: linear-gradient(90deg, #00b3b3, #006666); /* تغییر به رنگ آکوا در هاور */
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(0, 179, 179, 0.5);
+}
+
+.nav-list a i {
+    margin-right: 15px;
+    font-size: 26px;
+    transition: transform 0.5s ease;
+}
+
+.nav-list a:hover i {
+    transform: rotate(360deg); /* چرخش آیکون‌ها */
+}
+.img{
+width: 85px;
+height: 85px;
+border: solid 3px;
+border-radius: 20%;
+margin: 10px;
+position: absolute;
+top: 3%;
+left: 92%;
+}
+.java{
+width: 273px;
+height: 273px;
+background-color: #1a1a1a;
+box-shadow: 4px 4px 30px #00b3b3;
+border-radius: 6px;
+transition-duration: 1s;
+position: absolute;
+top: 20%;
+left: 60%;
+padding: 10px;
+}
+
+.htmlicon{
+
+    position: absolute;
+ left: 60%;
+    top: 20%;
+}
+.css1{
+    width: 300px;
+    height: 300px;
+    background-color: #1a1a1a;
+    box-shadow: 4px 4px 30px #00b3b3;
+    border-radius: 6px;
+    transition-duration: 1s;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    padding: 10px;
+    }
+    .cssicon{
+
+        position: absolute;
+        top: 60%;
+        left: 60%;
+    }
+    .sh{
+      
+        left: 60%;
+    }
+    .jv{
+        width: 200px;
+height: 250px;
+background-color: #1a1a1a;
+box-shadow: 4px 4px 30px #00b3b3;
+border-radius: 6px;
+transition-duration: 1s;
+position: absolute;
+top: 47%;
+left: 83%;
+padding: 10px;
+    }
+    .bio-container {
+        background: linear-gradient(45deg, #333, #111);
+        border-radius: 15px;
+        padding: 40px;
+        width: 90%;
+        max-width: 700px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        top: 100%;
+    }
+    
+    .bio-container:hover {
+        transform: scale(1.05);
+    }
+    
+    .bio-header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-align: center;
+        color: #00d1b2;
+        letter-spacing: 2px;
+    }
+    
+    .bio-header p {
+        font-size: 1.2rem;
+        text-align: center;
+        color: #f0f0f0;
+        margin-bottom: 20px;
+    }
+    
+    .bio-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #ddd;
+        text-align: justify;
+    }
+    
+    .bio-footer p {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        color: #00d1b2;
+        font-weight: bold;
+    }
+    
+    .bio-container:hover .bio-footer p {
+        color: #f0f0f0;
+        font-size: 1.3rem;
+    }
+
+
+/* تنظیمات کلی برای body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* ارتفاع صفحه 100% */
+    display: flex;
+    flex-direction: column; /* مرتب‌سازی محتوا به‌صورت عمودی */
+}
+
+/* محتوای اصلی */
+.main-content {
+    flex: 1; /* فضای باقی‌مانده را پر می‌کند */
+    padding: 20px;
+}
+
+/* تنظیمات کلی برای body */
+
+
+/* محتوای اصلی */
+.main-content {
+    flex: 1; /* فضای باقی‌مانده را پر می‌کند */
+    padding: 20px;
+}
+
+/* فوتر */
+.modern-footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    padding: 40px 10%;
+    text-align: center;
+    border-top: 2px solid #444;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  position: absolute;
+  top: 180%;
+    margin-top: auto; /* فوتر را در انتهای صفحه می‌برد */
+}
+
+/* لینک‌های اجتماعی */
+.modern-footer .social-links {
+    margin-top: 20px;
+}
+
+.modern-footer .social-links .social-icon {
+    margin: 0 15px;
+    color: #ccc;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.modern-footer .social-links .social-icon:hover {
+    color: #ff6f61; /* رنگ مدرن برای حالت hover */
+    transform: scale(1.2); /* بزرگ شدن آیکون در حالت hover */
+}
+
+/* لینک‌های پایین فوتر */
+.modern-footer .footer-links {
+    margin-top: 20px;
+}
+
+.modern-footer .footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.modern-footer .footer-links a:hover {
+    color: #ff6f61; /* رنگ مدرن برای حالت hover */
+}
+
+
+
+/* تعریف رنگ‌ها */
+:root {
+    --bg-dark: #0d0d0d;
+    --bg-light: #f4f4f4;
+    --text-dark: #ffffff;
+    --text-light: #1a1a1a;
+}
+
+/* استایل پیش‌فرض (دارک مود) */
+
+
+/* تغییرات در حالت لایت مود */
+body.light-mode {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+
+
+
+
+
