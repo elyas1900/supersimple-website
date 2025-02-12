@@ -45,16 +45,3 @@ closeBtn.addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".hidden");
-
-    function checkScroll() {
-        elements.forEach(el => {
-            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-                el.classList.add("show");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", checkScroll);
-});
-
-
