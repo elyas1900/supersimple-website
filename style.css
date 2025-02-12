@@ -3,6 +3,8 @@
 @media (max-width: 1000px) {
     body {
       font-size: 14px;
+        width: 1500px;
+        
     }
     .menu {
       display: block;
@@ -28,7 +30,7 @@
 
 html body{
 
-width: 600px;
+width: 1000px;
     height:5000px;
     height: 100%;
     margin: 0;
